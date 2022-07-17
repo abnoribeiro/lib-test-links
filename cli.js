@@ -7,7 +7,7 @@ import validateUrl from './http-validation'
 
 const pathFile = process.argv;
 
-const loadText = async (path) => {
+export const loadText = async (path) => {
     const result = await getFile(path[2]);
     
     if(path[3]){    
